@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: Rest2
+  datasource:
+    url: jdbc:postgresql://localhost:5432/TestLesson
+    username: 'postgres'
+    password: '0000'
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: create
+#server:
+#  port: 8081
