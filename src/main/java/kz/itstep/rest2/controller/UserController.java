@@ -25,6 +25,7 @@ public class UserController {
 
     @GetMapping("/") // localhost:8080/user/ GET
     public ResponseEntity<?> getAllUsers(){
+
         return ResponseEntity.accepted().body(userService.getAllUsers());
     }
 
