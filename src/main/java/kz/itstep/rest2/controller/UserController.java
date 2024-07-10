@@ -51,7 +51,7 @@ public class UserController {
     }
 
     @PatchMapping("/{id}") // localhost:8080/user/ METHOD=PATCH
-    public ResponseEntity<?> updateUser(@PathVariable Long id ,@RequestBody User user){
+    public ResponseEntity<?> updateUser(@Valid @PathVariable Long id ,@RequestBody User user){
         return ResponseEntity.accepted().body(userService.updateUser(id, user));
     }
 
