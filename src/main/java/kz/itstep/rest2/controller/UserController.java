@@ -3,13 +3,10 @@ package kz.itstep.rest2.controller;
 import jakarta.validation.Valid;
 import kz.itstep.rest2.model.User;
 import kz.itstep.rest2.service.UserService;
+import kz.itstep.rest2.service.impl.UserServiceImpl;
 import lombok.RequiredArgsConstructor;
-import org.springframework.http.HttpMethod;
-import org.springframework.http.HttpStatusCode;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.List;
 
 @RestController
 @RequestMapping("/user") //localhost:8080/user
