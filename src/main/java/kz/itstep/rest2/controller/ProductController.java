@@ -6,6 +6,7 @@ import kz.itstep.rest2.model.User;
 import kz.itstep.rest2.service.ProductService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -42,5 +43,8 @@ public class ProductController {
         productService.deleteProduct(id);
         return ResponseEntity.accepted().body("User with id: " + id + " was deleted.");
     }
+
+
+
 
 }
