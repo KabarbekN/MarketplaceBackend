@@ -17,7 +17,6 @@ public class ProductController {
 
     @GetMapping("/") // localhost:8080/product/ GET
     public ResponseEntity<?> getAllProducts(){
-
         return ResponseEntity.accepted().body(productService.getAllProducts());
     }
 
