@@ -5,6 +5,7 @@ spring:
     user:
       name: Junior
       password: 123456
+      roles: ADMIN
   datasource:
     url: jdbc:postgresql://localhost:5432/TestLesson
     username: 'postgres'
